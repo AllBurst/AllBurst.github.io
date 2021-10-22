@@ -23,3 +23,22 @@ Player data with currently owned tips.
 | amount             | Tips currently owned by the player                    | `i64`                        | `Long`    | `long`   |
 | last_daily_reward  | Last time when the player receives his daily rewards  | `Option<DateTime<Utc>>` | `String?` | `string` |
 | last_weekly_reward | Last time when the player receives his weekly rewards | `Option<DateTime<Utc>>` | `String?` | `string` |
+
+## Tip
+Player's tip data which only includes the amount, reward time and player's ID.
+### Payload example
+```json
+{
+    "player_id": "1234567890",
+    "amount": 100,
+    "last_daily_reward": "2021-10-21T10:42:46.137023Z",
+    "last_weekly_reward":"2021-10-21T10:42:46.137024Z"
+}
+```
+### Serialization guide
+| Field              | Description                                           | Rust                       | Kotlin  | C#     |
+|--------------------|-------------------------------------------------------|----------------------------|---------|--------|
+| player_id          | Snowflake of a Discord user                           | `String`                     | `String`  | `string` |
+| amount             | Tips currently owned by the player                    | `i64`                        | `Long`    | `long`   |
+| last_daily_reward  | Last time when the player receives his daily rewards  | `Option<DateTime<Utc>>` | `String?` | `string` |
+| last_weekly_reward | Last time when the player receives his weekly rewards | `Option<DateTime<Utc>>` | `String?` | `string` |
