@@ -7,7 +7,7 @@ Player data with currently owned tips.
 ```json
 {
     "player_id": "1234567890",
-    "avatar_url" "https://awesome-website.com/abc.png",
+    "avatar_url": "https://awesome-website.com/abc.png",
     "name": "John Doe",
     "amount": 100,
     "last_daily_reward": "2021-10-21T10:42:46.137023Z",
