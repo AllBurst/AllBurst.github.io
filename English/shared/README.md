@@ -17,9 +17,9 @@ Player data with currently owned tips.
 ### Serialization guide
 | Field              | Description                                           | Rust                       | Kotlin  | C#     |
 |--------------------|-------------------------------------------------------|----------------------------|---------|--------|
-| player_id          | Snowflake of a Discord user                           | String                     | String  | string |
-| avatar_url         | Player's avatar url used in embeds                    | Option\<String\>             | String? | string |
-| name               | Player's username or display name                     | String                     | String  | string |
-| amount             | Tips currently owned by the player                    | i64                        | Long    | long   |
-| last_daily_reward  | Last time when the player receives his daily rewards  | Option\<DateTime\<Utc\>\> | String? | string |
-| last_weekly_reward | Last time when the player receives his weekly rewards | Option\<DateTime\<Utc\>\> | String? | string |
+| player_id          | Snowflake of a Discord user                           | `String`                     | `String`  | `string` |
+| avatar_url         | Player's avatar url used in embeds                    | `Option<String>`             | `String?` | `string` |
+| name               | Player's username or display name                     | `String`                     | `String`  | `string` |
+| amount             | Tips currently owned by the player                    | `i64`                        | `Long`    | `long`   |
+| last_daily_reward  | Last time when the player receives his daily rewards  | `Option<DateTime<Utc>>` | `String?` | `string` |
+| last_weekly_reward | Last time when the player receives his weekly rewards | `Option<DateTime<Utc>>` | `String?` | `string` |
