@@ -15,12 +15,14 @@ Used to get player's data and currently owned tips.
 Get player's daily rewards. Player's display name is **NOT** updated.
 * Request format: `/player/<playerID>/daily`
 * Responses:
-    * HTTP 200 OK - [Tip](https://github.com/AllBurst/burstSpecs/tree/main/English/shared#tip) with updated tips.
-    * HTTP 204 No Content - The daily reward has been granted in the last 24 hours.
+    * HTTP 200 OK - [RewardResponse](https://github.com/AllBurst/burstSpecs/tree/main/English/shared#rewardresponse) with player's current tip data and whether the collection is successful (`Success` or `Failed`).
+    * HTTP 404 Not Found - Player doesn't exist in the database, i.e. player hasn't joined the server yet.
+    * HTTP 500 Internal Server Error - As its name implies. Detail messages can be found in the logs.
 
 ## **GET `/player/<playerID>/weekly`**
 Get player's weekly rewards. Player's display name is **NOT** updated.
 * Request format: `/player/<playerID>/weekly`
 * Responses:
-    * HTTP 200 OK - [Tip](https://github.com/AllBurst/burstSpecs/tree/main/English/shared#tip) with updated tips.
-    * HTTP 204 No Content - The daily reward has been granted in the last 24 hours.
+    * HTTP 200 OK - [RewardResponse](https://github.com/AllBurst/burstSpecs/tree/main/English/shared#rewardresponse) with player's current tip data and whether the collection is successful (`Success` or `Failed`).
+    * HTTP 404 Not Found - Player doesn't exist in the database, i.e. player hasn't joined the server yet.
+    * HTTP 500 Internal Server Error - As its name implies. Detail messages can be found in the logs.
