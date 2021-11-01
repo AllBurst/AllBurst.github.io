@@ -32,7 +32,7 @@ Request to be enrolled to the waiting list, or try to start a game immediately b
 * Request format:
 ```json
 {
-    "client_type": "Discord" | "Unity",
+    "client_type": "Unity",
     "player_ids": [1234567890, 987654321]
 }
 ```
